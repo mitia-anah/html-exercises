@@ -19,8 +19,23 @@
         <p>Please log in before accessing our website</p>
       </header>
 
-      <!-- Add your log in form here -->
-
+      <form action="/log-in" method="POST">
+        <p>
+          <label for="username_email">
+            <b>username</b>
+          <input type="email" id="username_email" name="username">
+          </label>
+        </p>
+        <p>
+          <label for="passeword">
+            <b>Password</b>
+          <input type="password" required></input>
+          </label>
+        </p>
+        <p>
+          <button type="submit">Log in</button>
+        </p>
+      </form>
     </main>
   </body>
 </html>
