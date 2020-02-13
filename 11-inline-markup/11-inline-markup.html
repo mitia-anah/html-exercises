@@ -18,22 +18,21 @@
 
       <!-- In this example, the 'Wait!' needs stressing when vocalised -->
       <p>
-        <em>"Wait!" shouted Jesse.</em>
+        <q><em>Wait!</em></q> shouted Jesse.
       </p>
 
       <hr>
 
       <!-- It's a good idea to tell a computer how to read a datetime: -->
       <p>
-        The time is now 2pm, <time datetime="2020-02-12T14:00">on Wednesday .</time>
+        The time is now <time datetime="2020-02-12T14:00:00+03:00">2pm, on Wednesday .</time>
       </p>
 
       <hr>
 
       <!-- What do 'H' and 'O' mean here? -->
       <p>
-          The elements <q>H</q>and <q>O</q> are chemical formula of water H<sub>2</sub>O,
-          which bond as H20, or water (as it is colloquaially known).
+          The elements <abb title="Hydrogen"> and O, b bond as H20, or <i>water</i> (as it is colloquaially known).
       </P>
 
       <hr>
@@ -42,8 +41,8 @@
       <p>
         Editor's Notes:<br>
 
-        Please use CTRL+B to bold this word: <b>Critical</b><br>
-        Please use CTRL+I to italicise this word: <i>Doubtful</i><br>
+        Please use <kbd>CTRL</kbd> + <kbd>B</kbd> to bold this word: <b>Critical</b><br>
+        Please use <kbd>CTRL</kbd> + <kbd>I</kbd> italicise this word: <i>Doubtful</i><br>
 
         Please underline this word: <u>Thinking</u><br>
         Please put a line through this word: <del>Assuming</del><br>
@@ -55,12 +54,13 @@
 
       <!-- We can do the same with samples of code, even maintaining the whitespace: -->
       <p>
-        <strong>"Woah!</strong><span>'that' was unexpected!"</span> exclaimed Keith.<br>
+        <q><em>Woah!</em><code>that</code> was unexpected!</q> exclaimed Keith.<br>
         Curiously, Jesse looked at the output on Keith's screen and it said:<br>
-
-           Unexpected value for argument 'that'
-          <s>- in function clickHandler, line 12</s>
-             - called from function anonymous, line 34
+  <pre>
+       Unexpected value for argument <code>'that'</code>
+          - in function <code>clickHandler</code>, line 12
+          - called from function anonymous, line 34
+  </pre>
       </p>
 
       <hr>
@@ -72,7 +72,7 @@
       <ul>
         <li>
           <a href="#bell-222">Bell 222</a>:<br>
-          <p>The <dfn id=" Model-222">Model 222</dfn> is a helicopter made by the Bell Helicopter Corporation.
+          The Model 222 is a <mark>Helicopter</mark> made by the Bell <mark>Helicopter</mark> Corporation.
         </li>
       </ul>
     </main>

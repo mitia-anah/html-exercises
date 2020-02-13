@@ -7,8 +7,8 @@ In this exercise, you'll need to use the inline elements mentioned below, on the
 Some of the inline elements:
 
 - `<abbr>`
-- `<b>`
-- `<code>`
+- `<bode>`
+- `<c>`
 - `<del>`
 - `<dfn>`
 - `<em>`
