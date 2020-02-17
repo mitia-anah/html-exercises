@@ -24,12 +24,50 @@
             - "About us" links to "/about"
             - "Contact us" links to "/contact"
         -->
+          <nav>
+            <ul>
+              <Li><a href="https://dndbeyond.com">Home</a></Li>
+              <li><a href="https://dndbeyond.com">Our services</a></li>
+              <li><a href="https://dndbeyond.com">About us</a></li>
+              <li><a href="https://dndbeyond.com">Contact us</a></li>
+            </ul>
+          </nav>
       </section>
 
       <section>
         <h2>A profile update form</h2>
+        <p>
+          <label for="first-name">First Name :</label>
+          <input type="text" id="profile_first_name" name="firstName" required>
+        </p>
+
+        <p>
+          <label for="last-name">Last Name :</label>
+          <input type="text" id="profile_family_name" name="lastName" required>
+        </p>
+
+        <p>
+          <label for="email">Email :</label>
+          <input type="email" name="mandatory" id="username">
+        </p>
+        <p>
+          <label for="phone_number">Phone number :</label>
+          <input type="tel" name="optional" id="phone">
+        </p>
+        <p>
+          <label for="gender">Gender :</label>
+          <form action="gender">
+            <input type="radio" id="m" name="gender" value="male"> Male<br>
+            <input type="radio" id="f" name="gender" value="female"> Female<br>
+            <input type="radio" id="na" name="gender" value="other"> Other
+          </form>
+        </p>
+        <p>
+          <label for="profile_photo">Profile Photo:</label>
+          <input id="photo" type="file" name="profile_photo" placeholder="Photo" required>
+
         <!--
-          2. Build a form that posts to "/profile/save". In this form we want the user to be able to update their profile, the form needs the following…
+          2. Build a form that posts to "/profile/save". In this form we want the user to be ab   le to update their profile, the form needs the following…
 
           The user's:
             - First name and Family name, to be saved as "profile_first_name" and "profile_family_name" respectively. This is required.
@@ -41,6 +79,7 @@
               - Prefer to not disclose, "na"
             - Photo, optional, as "profile_photo". The user can upload a photo if they want. We only accept PNGs, JPGs, and WebP formats.
         -->
+
       </section>
 
       <section>
@@ -58,6 +97,38 @@
 
       <section>
         <h2>A table</h2>
+        <table border="5">
+          <thead>
+            <tr>
+              <th scope="col" id="header-name">Name</th>
+              <th scope="col" id="header-age">Age</th>
+              <th scope="col" id="header-weight">Weight</th>
+              <th scope="col" id="header-height">Height</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th headers="header-name" scope="row" id="row-fred">Fred</th>
+              <td headers="row-fred header-age">23</td>
+              <td headers="row-fred header-weight">74kg</td>
+              <td headers="row-fred header-height">182cm</td>
+            </tr>
+            <tr>
+              <th headers="header-name" scope="row" id="row-anne">Anne</th>
+              <td headers="row-anne header-cost">26</td>
+              <td headers="row-anne header-qty">56kg</td>
+              <td headers="row-anne header-price">173cm</td>
+            </tr>
+            <tr>
+              <th headers="header-ame" scope="row" id="row-judith">Judith</th>
+              <td headers="row-judith header-cost">19</td>
+              <td headers="row-judith header-qty">51kg</td>
+              <td headers="row-judith header-price">168cm</td>
+            </tr>
+          </tbody>
+          <summary><p> According to the table bellow that Fred has the largest weight and longest height.
+            Judith is the youngest who has the least weight and height if compared as Anne's and Fred.</p>
+          </summary>
         <!--
           4. We need a table, with the following column headers:
 
@@ -74,6 +145,7 @@
 
           Please provide a summary of the student's information.
         -->
+        </table>
       </section>
 
       <section>
