@@ -6,6 +6,7 @@
     <title>
       15: Rich Media
     </title>
+    <link rel="stylesheet" href="css/rich-media.css">
     <!-- There's some CSS we need to include here -->
   </head>
   <body>
@@ -20,11 +21,38 @@
           <h2>Audio</h2>
         </header>
         <!-- Add the audio example here -->
+        <figure>
+          <audio controls
+            src="audio/early-high_wails.ogg" >
+              your browser does not support <code>audio</code> element.
+          </audio>
+          <audio controls
+            src="audio/late-high_wails-long.ogg">
+              your browser does not support <code>audio</code> element.
+          </audio>
+          <audio controls
+            src="audio/late-high_wails.ogg" >
+              your browser does not support <code>audio</code> element.
+          </audio>
+          <audio controls
+            src="audio/moan.ogg" >
+              your browser does not support <code>audio</code> element.
+          </audio>
+          <audio controls
+            src="audio/purr.ogg" >
+              your browser does not support <code>audio</code> element.
+          </audio>
+        </figure>
       </article>
       <article>
         <header>
           <h2>Video</h2>
         </header>
+        <video controls>
+          <source src="video/chip.mp4" type="video/mp4" >
+            your browser does not support <code>video</code> element.
+        </video>
+
         <!-- Add the video example here -->
       </article>
       <article>
@@ -32,8 +60,12 @@
           <h2>Canvas</h2>
         </header>
         <!-- Add the canvas example here -->
+         <canvas id="canvas"></canvas>
+
       </article>
     </main>
     <!-- For the canvas to work, we'll need the script included here -->
+    <script src="js/canvas.js">
+    </script>
   </body>
 </html>
